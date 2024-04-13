@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlugAuto</title>
+    <link rel="stylesheet" href="/_css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="/Js/script.js"></script>
+
+</head>
+
+<!-- Navbar Geral do Site -->
+<div class="barraDeNavegaçao">
+
+    <div class="caimento">
+      <button class="botaodecair">Estadia
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="conteudoDeCaida">
+        <a href="#">Camping Livre</a>
+        <a href="#">Hotéis dos Mares</a>
+      </div>
+    </div>
+    <div class="caimento">
+      <button class="botaodecair">Lazer
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="conteudoDeCaida">
+        <a href="#">TurisPar</a>
+        <a href="#">TOUR PHB</a>
+        <a href="#">Porto do Artesanato</a>
+        <a href="#">SkarRoller</a>
+        <a href="#">Water Kite</a>
+      </div>
+    </div>
+    <div class="caimento">
+      <button class="botaodecair">Alimentação
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="conteudoDeCaida">
+        <a href="#">Bankai</a>
+        <a href="#">Gellaticus</a>
+        <a href="#">Liga On</a>
+      </div>
+    </div>
+    <div class="caimento">
+      <button class="botaodecair">Transporte
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="conteudoDeCaida">
+        <a href="#">Casa da Aventura</a>
+        <a href="#">Alug1car</a>
+        <a href="#">L.A Passeio Marítimo</a>
+        <a href="#">Bem Veículado</a>
+      </div>
+    </div>
+    <a href="#" class="sobre-css">Sobre</a>
+    <a class="login" href="#">Login</a>
+  </div>
+
+
+<header class="header">
+
+    <!--Código da Imagem Logo:
+    <img src="/img/Icon-auto.png" alt="Icon-auto">-->
+    <a href="index.html"><img src="/img/ALUGAUTO.png" class="Logo-home" alt="imagem do Logotipo"></a>
+    <nav> <!--Navbar da Empresa-->
+        <ul class="menu">
+            <li><a href="Nossos-veiculos.html">Nossos Veículos</a></li>
+            <li><a href="Alugar.html">Alugar</a></li>
+            <li><a href="Fale-conosco.html">Fale Conosco</a></li>
+            <li><a href="Servicos.html">Serviços</a></li>
+            <li><a href="Ofertas-especiais.html">Ofertas Especiais</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!--Área de Cadastro inicial-->
+    <div class="background-image">
+        <img src="/img/bg-car.png" alt="carrões" class="bg-car">
+        <div class="h1-home">
+            <h1>BUSQUE O VEÍCULO IDEAL <BR> PARA SUA VIAGEM DE FÉRIAS</h1>
+        </div>
+    </div>
+
+    <!--Botão para Cadastro inicial-->
+    <button class="alugar-veiculos-button" id="alugarVeiculosButton" onclick="toggleOpcoesAluguel()">QUERO ALUGAR</button>
+
+    <div class="opcoes-aluguel-veiculos" id="opcoesAluguel">
+        <label for="cidade-estado">Qual o seu Estado?</label>
+        <br>
+        <select class="cidade-estado">
+            <option value="cidade1">Selecione o Estado</option>
+            <option value="cidade2">Acre</option>
+            <option value="cidade3">Alagoas</option>
+            <option value="cidade4">Amapá</option>
+            <option value="cidade5">Amazonas</option>
+            <option value="cidade6">Bahia</option>
+            <option value="cidade7">Ceará</option>
+            <option value="cidade8">Espírito Santo</option>
+            <option value="cidade9">Goiás</option>
+            <option value="cidade10">Maranhão</option>
+            <option value="cidade11">Mato Grosso</option>
+            <option value="cidade12">Mato Grosso do Sul</option>
+            <option value="cidade13">Minas Gerais</option>
+            <option value="cidade14">Pará</option>
+            <option value="cidade15">Paraíba</option>
+            <option value="cidade16">Paraná</option>
+            <option value="cidade17">Pernambuco</option>
+            <option value="cidade18">Piauí</option>
+            <option value="cidade19">Rio de Janeiro</option>
+            <option value="cidade20">Rio Grande do Norte</option>
+            <option value="cidade21">Rio Grande do Sul</option>
+            <option value="cidade22">Rondônia</option>
+            <option value="cidade23">Roraima</option>
+            <option value="cidade24">Santa Catarina</option>
+            <option value="cidade25">São Paulo</option>
+            <option value="cidade26">Sergipe</option>
+            <option value="cidade27">Tocantins</option>
+            <option value="cidade28">Distrito Federal</option>
+
+        </select>
+        <br>
+        <label for="cidade-estado">Qual a cidade que deseja retirar o Veículo?</label>
+        <br>
+        <select class="cidade-estado">
+            <option value="cidade1">Selecione a Cidade</option>
+            <option value="cidade2">Rio Branco</option>
+            <option value="cidade3">Maceió</option>
+            <option value="cidade4">Macapá</option>
+            <option value="cidade5">Manaus</option>
+            <option value="cidade6">Salvador</option>
+            <option value="cidade7">Fortaleza</option>
+            <option value="cidade8">Vitória</option>
+            <option value="cidade9">Goiânia</option>
+            <option value="cidade10">São Luís</option>
+            <option value="cidade11">Cuiabá</option>
+            <option value="cidade12">Campo Grande</option>
+            <option value="cidade13">Belo Horizonte</option>
+            <option value="cidade14">Belém</option>
+            <option value="cidade15">João Pessoa</option>
+            <option value="cidade16">Curitiba</option>
+            <option value="cidade17">Recife</option>
+            <option value="cidade18">Teresina</option>
+            <option value="cidade19">Parnaíba</option>
+            <option value="cidade20">Rio de Janeiro</option>
+            <option value="cidade21">Natal</option>
+            <option value="cidade22">Porto Alegre</option>
+            <option value="cidade23">Porto Velho</option>
+            <option value="cidade24">Boa Vista</option>
+            <option value="cidade25">Florianópolis</option>
+            <option value="cidade26">São Paulo</option>
+            <option value="cidade27">Aracaju</option>
+            <option value="cidade28">Palmas</option>
+            <option value="cidade29">Brasilia</option>
+
+        </select>
+        <br>
+        <label for="servicos-especiais">Selecione os Serviços Especiais:</label>
+        <div class="servicos-especiais">
+            <input type="checkbox" id="seguro" name="servicos-especiais">
+            <label for="seguro">Seguro</label>
+            <input type="checkbox" id="gps" name="servicos-especiais">
+            <label for="gps">GPS</label>
+            <input type="checkbox" id="cadeira-bebe" name="servicos-especiais">
+            <label for="cadeira-bebe">Cadeira de Bebê</label>
+            <input type="checkbox" id="cadeira-bebe" name="servicos-especiais">
+            <label for="cadeira-bebe">Sem Motorista</label>
+        </div>
+        <br>
+        <br>
+
+        <label for="data-retirada">Data de Retirada:</label>
+        <input type="date" id="data-retirada">
+        <label for="data-devolucao">Data de Devolução:</label>
+        <input type="date" id="data-devolucao">
+
+        <div class="btn-opcoes">
+          <button class="btn-cancelar"><a href="index.html">Cancelar</a></button>
+          <a href="#" class="btn-continue"><button onclick="continuarAluguel()" class="btn-ct">Continuar</button></a>
+        </div>   
+    </div>
+    <!-- Área do Video de Apresentação -->
+    <section>
+    <div class="bg-video">
+        <h1 class="gradient-rb">
+          <video src="/img/Planeta Dos Macacos O Reinado Trailer Oficial Dublado.mp4" class="video-fg" controls></video>
+        </h1>
+      </div>
+    </section>
+
+</body>
+
+</html>
