@@ -447,15 +447,29 @@ header{
     background-color: #0000006b;
     display: grid;
     color: #ffffff;
-    font-family: "Tilt Neon";
-    text-align: center;
+    font-family: sans-serif;
     font-size: 10px;
     padding-bottom: 2px;
     width: 100px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
   
+  /* Estilo quando o card está ativo */
+  .card.active {
+    border: 2px solid red;
+  }
+  
+  /* Estilo do texto adicional */
+  .texto-adicional {
+    display: none; /* Escondido por padrão */
+  }
+  
+  /* Estilo do texto adicional quando o card está ativo */
+  .card.active .texto-adicional {
+    display: block; /* Exibido quando o card está ativo */
   }
   
   .card:hover {
@@ -471,7 +485,7 @@ header{
     font-weight: normal;
     text-align: left;
     padding-bottom: 2px;
-    width: 500px;
+    width: 300px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

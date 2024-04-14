@@ -28,3 +28,13 @@ window.addEventListener('scroll', function() {
         retangulo.style.display = 'none';
     }
 });
+
+function mostrarTexto(idTexto, event) {
+    event.preventDefault();
+    var texto = document.getElementById(idTexto);
+    if (texto.style.display === 'none') {
+      texto.style.display = 'block';
+    } else {
+      texto.style.display = 'none';
+    }
+  }
