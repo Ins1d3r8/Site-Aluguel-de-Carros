@@ -381,4 +381,38 @@ header{
     border: 2px solid white;
     padding: 10px;
   }
+  
+  .h1-video {
+    color: #fff;
+    text-align: right;
+    padding: 5%;
+    padding-bottom: 0%;
+    font-size: 45px;
+    font-family: "Tilt Neon";
+    border-right: 4px, solid;
+    width: 50ch;
+    overflow: hidden;
+    animation: typing 3s steps(50), blinking 0.5s infinite step-end alternate;
 
+  }
+
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blinking {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  
+  .p-video {
+    color: #fff;
+    text-align: right;
+    padding-left: 15%;
+    font-family: "Tilt Neon";
+  }

@@ -19,3 +19,4 @@ function toggleOpcoesAluguel() {
 function continuarAluguel() {
     alert('AGUARDE ENQUANTO CARREGAMOS SUAS INFORMAÇÕES...');
 }
+
