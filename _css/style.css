@@ -447,7 +447,8 @@ header{
     background-color: #0000006b;
     display: grid;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: "Tilt Neon";
+    text-align: center;
     font-size: 10px;
     padding-bottom: 2px;
     width: 100px;
@@ -457,19 +458,18 @@ header{
     transition: background-color 0.3s;
   }
   
-  /* Estilo quando o card está ativo */
+ 
   .card.active {
     border: 2px solid red;
   }
   
-  /* Estilo do texto adicional */
+
   .texto-adicional {
-    display: none; /* Escondido por padrão */
+    display: none; 
   }
   
-  /* Estilo do texto adicional quando o card está ativo */
   .card.active .texto-adicional {
-    display: block; /* Exibido quando o card está ativo */
+    display: block; 
   }
   
   .card:hover {
@@ -493,4 +493,45 @@ header{
   }
   #car-simples {
     width: 95px;
+  }
+
+  #texto-car-simples{
+    margin-top: 15%;
+
+  }
+
+  .texto-adicional {
+    font-family: "Tilt Neon";
+    text-align: left;
+
+  }
+
+  #texto-car-simples2 {
+    font-family: "Tilt Neon";
+    text-align: left;
+    margin-top: 15%;
+  }
+
+  #texto-car-simples3 {
+    margin-top: 15%;
+  }
+
+  #texto-car-simples4 {
+    margin-top: 15%;
+  }
+
+  #texto-car-simples5 {
+    margin-top: 15%;
+  }
+
+  #texto-car-simples6 {
+    margin-top: 15%;
+  }
+
+  #texto-car-simples7 {
+    margin-top: 15%;
+  }
+
+  #texto-car-simples8 {
+    margin-top: 15%;
   }
